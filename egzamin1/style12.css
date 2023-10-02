@@ -1,0 +1,64 @@
+body {
+    font-family: Verdana;
+}
+
+#menu {
+    background-color:  SandyBrown;
+    height: 120px;
+    width: 60%;
+}
+
+#logo {
+    background-color: Sienna;
+    color: white;
+    text-align: center;
+    height: 120px;
+    width: 40%;
+}
+
+#main-left {
+    background-color: Sienna;
+    color: white;
+    height: 700px;
+    width: 60%;
+}
+
+#main-right {
+    background-color:  SandyBrown;
+    height: 700px;
+    width: 40%;
+}
+
+#footer {
+    background-color: #4D1900;
+    color: white;
+    text-align: right;
+}
+
+#menu a {
+    background-color: green;
+    color: yellow;
+    padding: 20px 50px 20px 50px;
+}
+
+#menu a:hover {
+    background-color: yellow;
+    color: green;
+}
+
+#menu, #logo, #main-left, #main-right {
+    float: left;
+}
+
+#main-left, #footer {
+    clear: both;
+}
+
+#linki {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#menu {
+    display: table;
+}
