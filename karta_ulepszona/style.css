@@ -1,0 +1,78 @@
+
+body {
+    text-align: center;
+    background-color: rgb(89, 172, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#container {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tiltcard {
+    width: 550px;
+    height: 350px;
+    border: 1px solid #000;
+    background: #2b8d85;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 0; 
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font:initial;
+    font-size: 40px;
+}
+
+.imie_karta {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    margin: 5;
+    font:initial;
+    font-size: 30px;
+}
+
+.numer_karta {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font:initial;
+    font-size: 30px;
+}
+
+.data_karta {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font: initial;
+    font-size: 10px;
+}
+
+.chip {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
+
+.visa {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
