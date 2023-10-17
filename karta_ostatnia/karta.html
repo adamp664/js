@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h2>Wprowadź dane:</h2>
+        <input type="text" id="imie" placeholder="Imię"><br><br>
+        <input type="text" id="nazwisko" placeholder="Nazwisko"><br><br>
+        <input type="text" id="numerKarty" placeholder="Numer karty"><br><br>
+        <input type="text" id="dataKarty" placeholder="Data wygasniecia"><br><br>
+    </div>
+
+    <div class="tiltcard" data-tilt data-tilt-glare>
+            <div>
+                <h1>BANK ADAM</h1>
+            </div>
+            <div class="chip">
+                <p><img src="chip.png" width="80px" height="80px"></p>
+            </div>
+            <div class="visa">
+                <p><img src="visa.png" height="60px" width="160px"></p>
+            </div>
+            <div class="imie_karta">
+                <p><span id="imieWynik"></span> <span id="nazwiskoWynik"></span></p>
+            </div>
+            
+            <div class="data_karta">
+                <p>VALID TRU <span id="dataKartyWynik"></span></p> 
+            </div>
+            <div class="numer_karta">
+                <p><span id="numerKartyWynik"></span></p>
+            </div>
+    </div>
+
+    <script src="vanilla-tilt.js"></script>
+
+    <script>
+        // pobieranie danych z inputow
+        var imieInput = document.getElementById("imie");
+        var nazwiskoInput = document.getElementById("nazwisko");
+        var numerKartyInput = document.getElementById("numerKarty");
+        var dataKartyInput = document.getElementById("dataKarty");
+
+        // pobieranie danych do wyswietlania
+        var imieWynik = document.getElementById("imieWynik");
+        var nazwiskoWynik = document.getElementById("nazwiskoWynik");
+        var numerKartyWynik = document.getElementById("numerKartyWynik");
+        var dataKartyWynik = document.getElementById("dataKartyWynik");
+
+        // zmiany w inputach i aktualizacje
+        imieInput.addEventListener("input", function () {
+            imieWynik.textContent = imieInput.value;
+        });
+
+        nazwiskoInput.addEventListener("input", function () {
+            nazwiskoWynik.textContent = nazwiskoInput.value;
+        });
+
+        numerKartyInput.addEventListener("input", function () {
+            numerKartyWynik.textContent = numerKartyInput.value;
+        });
+
+        dataKartyInput.addEventListener("input", function () {
+            dataKartyWynik.textContent = dataKartyInput.value;
+        });
+    </script>
+</body>
+</html>
