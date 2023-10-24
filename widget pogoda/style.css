@@ -1,0 +1,23 @@
+#weather-widget {
+    text-align: center;
+    padding: 20px;
+}
+
+#weather-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#city-name {
+    font-size: 24px;
+}
+
+#temperature {
+    font-size: 18px;
+}
+
+#description {
+    font-size: 16px;
+}

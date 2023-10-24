@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Widget Pogodowy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="weather-widget">
+        <h1>Pogoda</h1>
+        <div id="city-input">
+            <label for="city">Wprowadź dane:</label>
+            <input type="text" id="city" placeholder="Miasto">
+            <button id="search">Szukaj</button>
+            <button id="forecast-button">Pokaż prognozę</button>
+        </div>
+        <div id="weather-info">
+            <h1 id="city-name"></h1>
+            <h2 id="temperature">Temperatura:</h2>
+            <p id="description">Opis:</p>
+            <p id="current-date">Dzisiejsza data:</p>
+            <p id="feelsLike">Odczuwalna:</p>
+            <p id="windSpeed">Predkosc wiatru:</p>
+            <p id="pressure">Cisnienie:</p>
+            <p id="minMaxTemperature">Min/Max temperatura:</p>
+            <div id="forecast" style="display: none;">
+                <h2>Prognoza na następne dni:</h2>
+                <div id="forecast-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
